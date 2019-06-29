@@ -1,0 +1,24 @@
+table{
+  margin: 0;
+}
+
+th {
+  height: 30px;
+}
+td{
+  height: 70px;
+  text-align: center;
+}
+
+.floatLeft {
+  width: 70%;
+  float: left;
+}
+.floatRight {
+  width: 30%;
+  float: right;
+}
+.container{
+  margin-left: 10px;
+  margin-right: 10px;
+}

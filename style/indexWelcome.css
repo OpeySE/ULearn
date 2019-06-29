@@ -1,0 +1,99 @@
+/* Creating CSS Variables for consistent styling */
+:root {
+--main-bg-color: #fafafa;
+--aqua: #4286f4;
+--dark_blue: #4242f4;
+--accent-light: #1976d2;
+--accent-dark: #004c8c;
+}
+
+/* Page Tags */
+/* Affects the whole document */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: var(--accent-dark);
+  color: white;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: left; /* align horizontal */
+  align-items: center; /* align vertical */
+  padding:1vw;
+  font-size: 35px;
+}
+nav header>a{
+  text-decoration: none;
+  margin-left: 2vw;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 80vh 5vh ;
+  grid-template-areas:
+  "nav"
+  "main"
+  "foot";
+}
+
+section{
+  text-align: left;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+h1{
+  font-size: 28px;
+}
+
+p{
+  font-size: 24px;
+}
+
+.welcome{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4% 8% 0% 8%;
+}
+
+ul li{
+  display: inline;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+li a{
+  text-decoration: none;
+  color: White;
+  font-size: 1.5em;
+  background-color: var(--accent-dark);
+  padding: 4%;
+}
+
+a:hover{
+  opacity: 0.9;
+  color: black;
+  transform: scale(1.1);
+}
+
+footer{
+  grid-area: foot;
+  background-color: var(--aqua);
+}

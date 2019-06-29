@@ -1,0 +1,117 @@
+/* Creating CSS Variables for consistent styling */
+:root {
+--main-bg-color: #fafafa;
+--aqua: #4286f4;
+--dark_blue: #4242f4;
+--accent-light: #1976d2;
+--accent-dark: #004c8c;
+}
+
+/* Page Tags */
+/* Affects the whole document */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+nav header{
+  background-color: var(--accent-dark);
+  color: white;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: left; /* align horizontal */
+  align-items: center; /* align vertical */
+  padding:1vw;
+}
+nav header>a{
+  text-decoration: none;
+  margin-left: 2vw;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 80vh 5vh ;
+  grid-template-areas:
+  "nav"
+  "main"
+  "foot";
+}
+
+nav{
+  grid-area: nav;
+  background-color: var(--accent-light);
+  color: white;
+}
+nav>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px 0px 2px 0px;
+}
+nav>ul>li{
+  display: inline;
+  flex-basis: 30%;
+  text-align: center;
+  text-decoration: none;
+}
+nav>ul>li>a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+nav>ul>li>a:hover{
+  opacity: 0.8;
+  color: black;
+  transform: scale(1.1);
+}
+
+.column {
+  display:inline-block;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  margin-left: 2%;
+  margin-top: 6%
+}
+
+.column h2 {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 5px;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.column p {
+  text-align: center;
+  font-size: 21px;
+  font-family: sans-serif;
+  padding: 4px;
+  white-space: normal;
+  overflow: hidden;
+}
+
+button{
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inherit;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+}
+
+footer{
+  grid-area: foot;
+  background-color: var(--aqua);
+}
