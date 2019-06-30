@@ -1,10 +1,13 @@
 # ULearn
 A web based learning platform for children between the age of 13 to 16, which aims to improve and develop their skills in areas such as English, Maths and Computing.
 
-## Application Information:
+## Application information:
 This application has been created through the a combination of HTML, CSS, PHP and SQL.
 
-## Instructions for installation / Running
+## Instructions for installation
+Copy project into xampp/htdocs/ if you are using XAMP or the localhost directory. Setup the database provided in the sql folder. 
+
+## Instructions for running
 Requirement: uLearn web application is intended to be run on a web browser and requires internet access.
 
 1. The application requires a login which can be created through the 'register' button.
