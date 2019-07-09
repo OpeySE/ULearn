@@ -1,8 +1,7 @@
 <?php
 function start_session(){
-  session_start();
-  /* Instialises the database */
-  $conn = new mysqli("localhost", "root", "pass", "ulearn");
+  /* Instialise your database */
+  $conn = new mysqli("localhost", "username", "password", "databaseName");
   if ($conn->connect_error) {
   	exit("Database error!");
   }
